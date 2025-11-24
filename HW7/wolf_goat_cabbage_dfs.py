@@ -51,7 +51,6 @@ def move(state: State, passenger: Optional[str]) -> Optional[State]:
 
 
 def get_neighbors(state: State):
-    
     neighbors = []
     for passenger in [None, 'W', 'G', 'C']:
         ns = move(state, passenger)
