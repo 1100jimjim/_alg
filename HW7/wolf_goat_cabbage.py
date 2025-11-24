@@ -8,11 +8,9 @@ def is_safe(state):
     """檢查該狀態是否安全（沒有人被吃）"""
     M, W, G, C = state
 
-    # 狼與羊在同一岸，且人不在那邊 -> 羊被吃掉
     if W == G and M != W:
         return False
 
-    # 羊與菜在同一岸，且人不在那邊 -> 菜被吃掉
     if G == C and M != G:
         return False
 
@@ -28,13 +26,11 @@ def move(state, passenger):
     # 人移動方向：從 L 到 R 或 R 到 L
     new_side = RIGHT if M == LEFT else LEFT
 
-    # 先移動人
     M2, W2, G2, C2 = M, W, G, C
     M2 = new_side
 
-    # 再移動乘客（若有）
     if passenger == 'W':
-        if W != M:   # 狼不在同一岸，不能載
+        if W != M:   
             return None
         W2 = new_side
     elif passenger == 'G':
@@ -46,13 +42,12 @@ def move(state, passenger):
             return None
         C2 = new_side
     elif passenger is None:
-        # 人單獨過河
         pass
     else:
-        return None  # 不合法乘客
+        return None 
 
     next_state = (M2, W2, G2, C2)
-    # 檢查是否安全
+    
     if is_safe(next_state):
         return next_state
     else:
@@ -76,13 +71,12 @@ def bfs(start, goal):
     visited = set()
     visited.add(start)
 
-    # 用來記錄前一個狀態與怎麼走過來的
     parent = {start: (None, None)}  # state: (prev_state, passenger)
 
     while queue:
         current = queue.popleft()
         if current == goal:
-            # 找到解，回溯路徑
+            
             path = []
             s = current
             while s is not None:
@@ -98,7 +92,7 @@ def bfs(start, goal):
                 parent[ns] = (current, passenger)
                 queue.append(ns)
 
-    return None  # 沒有解（理論上不會發生）
+    return None  
 
 
 def print_solution(path):
