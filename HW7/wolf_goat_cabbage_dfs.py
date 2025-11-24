@@ -7,14 +7,14 @@ State = Tuple[str, str, str, str]  # (M, W, G, C)
 
 
 def is_safe(state: State) -> bool:
-    """檢查狀態是否安全（沒有人被吃）"""
+    
     M, W, G, C = state
 
-    # 狼與羊在同一岸，且人不在那邊 -> 羊被吃掉
+    
     if W == G and M != W:
         return False
 
-    # 羊與菜在同一岸，且人不在那邊 -> 菜被吃掉
+    
     if G == C and M != G:
         return False
 
@@ -22,10 +22,7 @@ def is_safe(state: State) -> bool:
 
 
 def move(state: State, passenger: Optional[str]) -> Optional[State]:
-    """
-    根據 passenger 產生下一個狀態：
-    passenger 可以是 None, 'W', 'G', 'C'
-    """
+    
     M, W, G, C = state
     new_side = RIGHT if M == LEFT else LEFT
 
@@ -45,7 +42,6 @@ def move(state: State, passenger: Optional[str]) -> Optional[State]:
             return None
         C2 = new_side
     elif passenger is None:
-        # 人單獨過河
         pass
     else:
         return None
@@ -55,7 +51,7 @@ def move(state: State, passenger: Optional[str]) -> Optional[State]:
 
 
 def get_neighbors(state: State):
-    """產生所有合法的下一步狀態及其乘客標記"""
+    
     neighbors = []
     for passenger in [None, 'W', 'G', 'C']:
         ns = move(state, passenger)
@@ -68,16 +64,9 @@ def dfs(current: State,
         goal: State,
         visited: Set[State],
         path: List[Tuple[State, Optional[str]]]) -> bool:
-    """
-    深度優先搜尋：
-    - current: 目前狀態
-    - goal: 目標狀態
-    - visited: 已拜訪過的狀態
-    - path: 目前走過的路徑（(state, passenger) 列表）
-    回傳：是否找到解
-    """
+    
     if current == goal:
-        return True  # path 已經記錄到這裡了
+        return True  
 
     for ns, passenger in get_neighbors(current):
         if ns in visited:
@@ -85,15 +74,14 @@ def dfs(current: State,
         visited.add(ns)
         path.append((ns, passenger))
         if dfs(ns, goal, visited, path):
-            return True  # 找到解就一路回傳 True
-        # 沒找到解，回溯
+            return True  
         path.pop()
 
     return False
 
 
 def print_solution(path: List[Tuple[State, Optional[str]]]):
-    """把路徑用比較好讀的方式印出來"""
+    
     def side_str(s: State) -> str:
         return "人:{} 狼:{} 羊:{} 菜:{}".format(*s)
 
@@ -115,7 +103,7 @@ if __name__ == "__main__":
     goal_state: State = (RIGHT, RIGHT, RIGHT, RIGHT)
 
     visited = {start_state}
-    # path 中每個元素: (狀態, 這一步是載誰過來的)
+    
     path: List[Tuple[State, Optional[str]]] = [(start_state, None)]
 
     if dfs(start_state, goal_state, visited, path):
