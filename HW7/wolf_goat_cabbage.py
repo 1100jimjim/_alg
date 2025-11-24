@@ -5,7 +5,6 @@ LEFT = 'L'
 RIGHT = 'R'
 
 def is_safe(state):
-    
     M, W, G, C = state
 
     if W == G and M != W:
@@ -18,7 +17,6 @@ def is_safe(state):
 
 
 def move(state, passenger):
-    
     M, W, G, C = state
     
     new_side = RIGHT if M == LEFT else LEFT
@@ -41,7 +39,7 @@ def move(state, passenger):
     elif passenger is None:
         pass
     else:
-        return None 
+        return None  
 
     next_state = (M2, W2, G2, C2)
     
@@ -52,7 +50,6 @@ def move(state, passenger):
 
 
 def get_neighbors(state):
-    
     neighbors = []
     for passenger in [None, 'W', 'G', 'C']:
         ns = move(state, passenger)
@@ -62,7 +59,6 @@ def get_neighbors(state):
 
 
 def bfs(start, goal):
-    
     queue = deque()
     queue.append(start)
     visited = set()
@@ -73,7 +69,6 @@ def bfs(start, goal):
     while queue:
         current = queue.popleft()
         if current == goal:
-            
             path = []
             s = current
             while s is not None:
@@ -89,24 +84,29 @@ def bfs(start, goal):
                 parent[ns] = (current, passenger)
                 queue.append(ns)
 
-    return None  
+    return None   
 
 
 def print_solution(path):
-    
     def side_str(s):
         return "人:{} 狼:{} 羊:{} 菜:{}".format(*s)
 
-    print("解的步驟：")
+    name_map = {
+        'W': '狼',
+        'G': '羊',
+        'C': '菜'
+    }
+
+    print("BFS 找到的一組解：")
     for i, (state, passenger) in enumerate(path):
         if i == 0:
-            print(f"步驟 {i}: 起點  -> {side_str(state)}")
+            print(f"步驟 {i}: 起點          -> {side_str(state)}")
         else:
             if passenger is None:
                 action = "人單獨過河"
             else:
-                action = f"人帶著「{passenger}」過河"
-            print(f"步驟 {i}: {action:8s} -> {side_str(state)}")
+                action = f"人帶著「{name_map[passenger]}」過河"
+            print(f"步驟 {i}: {action:10s} -> {side_str(state)}")
 
 
 if __name__ == "__main__":
