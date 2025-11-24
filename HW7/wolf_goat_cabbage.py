@@ -5,7 +5,7 @@ LEFT = 'L'
 RIGHT = 'R'
 
 def is_safe(state):
-    """檢查該狀態是否安全（沒有人被吃）"""
+    
     M, W, G, C = state
 
     if W == G and M != W:
@@ -18,12 +18,9 @@ def is_safe(state):
 
 
 def move(state, passenger):
-    """
-    根據 passenger 產生下一個狀態:
-    passenger 可以是 None, 'W', 'G', 'C'
-    """
+    
     M, W, G, C = state
-    # 人移動方向：從 L 到 R 或 R 到 L
+    
     new_side = RIGHT if M == LEFT else LEFT
 
     M2, W2, G2, C2 = M, W, G, C
@@ -55,7 +52,7 @@ def move(state, passenger):
 
 
 def get_neighbors(state):
-    """從目前狀態產生所有合法的下一步狀態"""
+    
     neighbors = []
     for passenger in [None, 'W', 'G', 'C']:
         ns = move(state, passenger)
@@ -65,13 +62,13 @@ def get_neighbors(state):
 
 
 def bfs(start, goal):
-    """用 BFS 找出從 start 到 goal 的最短路徑"""
+    
     queue = deque()
     queue.append(start)
     visited = set()
     visited.add(start)
 
-    parent = {start: (None, None)}  # state: (prev_state, passenger)
+    parent = {start: (None, None)}  
 
     while queue:
         current = queue.popleft()
@@ -96,7 +93,7 @@ def bfs(start, goal):
 
 
 def print_solution(path):
-    """把路徑用比較好讀的方式印出來"""
+    
     def side_str(s):
         return "人:{} 狼:{} 羊:{} 菜:{}".format(*s)
 
