@@ -1,1 +1,17 @@
 https://chatgpt.com/share/692411e1-c734-8007-8ad3-a2dd63a404a0
+
+bottom-up：
+
+   A.時間：O(N^2)
+
+   B.空間：O(N^2)
+
+   C.優點：沒有遞迴、不會 stack overflow，很穩定
+
+top-down + memo：
+
+   A.時間：一般 O(N·K)，最壞 O(N^2)
+
+   B.空間：一般 O(N·K + N)（表 + stack）
+
+   C.優點：只算到需要的狀態，對於 K 小的情況比較省時間，但會吃遞迴 stack
