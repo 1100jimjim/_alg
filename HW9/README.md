@@ -1,5 +1,5 @@
 ```字串編輯距離```
-```text
+```
 PS C:\ccc\py2cs> & C:/Users/user/AppData/Local/Programs/Python/Python312/python.exe c:/ccc/py2cs/HW/HW8.py
 請輸入字串1：ATGATCCG
 請輸入字串2：ATGCAATCCC
