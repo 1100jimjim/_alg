@@ -3,7 +3,6 @@ import numpy as np
 p = np.array([0.5, 0.2, 0.3], dtype=float)
 
 def entropy_bits(p):
-    """用 log2 的 entropy，單位 bits。"""
     return -np.sum(p * np.log2(p + 1e-12))
 
 target_entropy = entropy_bits(p)
