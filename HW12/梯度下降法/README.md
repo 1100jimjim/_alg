@@ -62,7 +62,7 @@ print("Diff (q - p):", final_q - p)
 執行結果:
 ---
 ```
-PS C:\ccc\py2cs> & C:/Users/user/AppData/Local/Programs/Python/Python312/python.exe c:/ccc/py2cs/HW/HW12.py
+PS C:\ccc\py2cs> & C:/Users/user/AppData/Local/Programs/Python/Python312/python.exe c:/ccc/py2cs/HW/HW12-Gradient.py
 Target p: [0.5 0.2 0.3]
 Target Min Loss (Entropy): 1.48548
 
