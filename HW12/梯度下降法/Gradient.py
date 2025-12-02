@@ -15,7 +15,6 @@ def softmax(z):
     return e / np.sum(e)
 
 def cross_entropy_bits(p, q):
-    """Cross Entropy 使用 log2（和 entropy 單位一致）"""
     return -np.sum(p * np.log2(q + 1e-12))
 
 np.random.seed(0)
