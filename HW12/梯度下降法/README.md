@@ -1,4 +1,4 @@
-#程式碼
+程式碼:
 ---
 ```.py
 import numpy as np
