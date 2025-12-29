@@ -40,3 +40,8 @@
 
 ## [HW9](https://github.com/1100jimjim/_alg/tree/main/HW9)
 說明:根據老師的要求使用ChatGPT寫一個最小編輯距離程式，並請他進行說明
+
+---
+
+## [HW10](https://github.com/1100jimjim/_alg/tree/main/HW10)
+說明:根據老師的參考資料與AI問答後，使用ChatGPT協助完成
