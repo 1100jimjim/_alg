@@ -10,3 +10,8 @@
 
 ## [HW3](https://chatgpt.com/share/6923d733-98c8-8007-842c-f849050520c3)
 說明:使用ChatGPT完成
+
+---
+
+## [HW4](https://gemini.google.com/share/38cecef9d088)
+說明:使用Gemini完成
