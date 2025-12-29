@@ -49,4 +49,4 @@
 ---
 
 ## [HW11](https://chatgpt.com/share/6925d0db-23bc-8007-946d-6d5e82836041)
-說明:使用ChatGPT講計算理論的故事給我聽
+說明:使用ChatGPT講計算理論的故事
