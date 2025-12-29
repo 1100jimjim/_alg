@@ -55,3 +55,8 @@
 
 ## [HW12](https://github.com/1100jimjim/_alg/tree/main/HW12)
 說明:參考老師提供的範例與答案，並在ChatGPT的教學下實作梯度下降法、爬山演算法跟隨機搜尋法驗證cross_entropy(p, q)的最低點是 q=p
+
+---
+
+## [期中作業](https://github.com/1100jimjim/_alg/tree/main/HW-JM)
+說明:在ChatGPT教學與協助下完成專案反傳遞演算法（梯度引擎）
