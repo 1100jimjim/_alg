@@ -45,3 +45,8 @@
 
 ## [HW10](https://github.com/1100jimjim/_alg/tree/main/HW10)
 說明:根據老師的參考資料與AI問答後，使用ChatGPT協助完成
+
+---
+
+## [HW11](https://chatgpt.com/share/6925d0db-23bc-8007-946d-6d5e82836041)
+說明:使用ChatGPT講計算理論的故事給我聽
