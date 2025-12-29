@@ -220,4 +220,21 @@ python HW-JM.py
 3. 計算圖文字化輸出
 
 4. 顯示完成訊息
+
+---
  
+## 9. 關鍵概念
+
+- 反向傳遞演算法（Backpropagation）
+
+- 鏈式法則（Chain Rule）
+
+- 自動微分（Automatic Differentiation）
+
+- 反向模式（Reverse-Mode）
+
+- 計算圖（Computation Graph）
+
+- 梯度下降（Gradient Descent）
+
+- 數值穩定性（Numerical Stability）
