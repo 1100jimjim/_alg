@@ -95,3 +95,93 @@ autodiff grad df/dx = 0.1485876193
 numerical grad      = 0.1485876193
 abs diff            = 6.5606492461e-11
 ```
+
+### 計算圖文字化輸出（Computation Graph）
+
+```text
+op=       | data= -1.000000 | grad=  0.000851 | prev=0
+op=     * | data=  1.523990 | grad=  0.000851 | prev=1
+op=     + | data=  1.921514 | grad=  1.000000 | prev=2
+op=     * | data=  3.703500 | grad=  0.000851 | prev=2
+op=sigmoid | data=  0.921940 | grad=  1.000000 | prev=1
+op=     + | data=  4.227490 | grad=  0.000851 | prev=2
+op=  tanh | data=  0.999574 | grad=  1.000000 | prev=1
+op=       | data=  1.234500 | grad=  0.148588 | prev=0
+op=     * | data=  2.469000 | grad=  0.071967 | prev=2
+op=       | data=  2.000000 | grad=  0.088843 | prev=0
+op=       | data=  3.000000 | grad=  0.001051 | prev=0
+op=     + | data=  5.227490 | grad=  0.000851 | prev=2
+```
+
+### 計算圖邊線關係（Edges）
+
+```text
+=== Edges (child -> parent) ===
+  leaf ->      +
+=== Edges (child -> parent) ===
+=== Edges (child -> parent) ===
+  leaf ->      +
+=== Edges (child -> parent) ===
+=== Edges (child -> parent) ===
+  leaf ->      +
+     * ->      +
+=== Edges (child -> parent) ===
+  leaf ->      +
+=== Edges (child -> parent) ===
+  leaf ->      +
+     * ->      +
+=== Edges (child -> parent) ===
+  leaf ->      +
+=== Edges (child -> parent) ===
+  leaf ->      +
+     * ->      +
+=== Edges (child -> parent) ===
+  leaf ->      +
+=== Edges (child -> parent) ===
+  leaf ->      +
+     * ->      +
+=== Edges (child -> parent) ===
+  leaf ->      +
+=== Edges (child -> parent) ===
+  leaf ->      +
+=== Edges (child -> parent) ===
+=== Edges (child -> parent) ===
+  leaf ->      +
+=== Edges (child -> parent) ===
+=== Edges (child -> parent) ===
+=== Edges (child -> parent) ===
+=== Edges (child -> parent) ===
+=== Edges (child -> parent) ===
+  leaf ->      +
+     * ->      +
+=== Edges (child -> parent) ===
+  leaf ->      +
+=== Edges (child -> parent) ===
+  leaf ->      +
+     * ->      +
+  leaf ->      +
+     * ->      +
+     * ->      +
+     * -> sigmoid
+     * -> sigmoid
+  leaf ->      *
+  leaf ->      *
+  tanh ->      +
+  tanh ->      +
+  leaf ->      *
+     + ->   tanh
+     + ->   tanh
+  leaf ->      *
+  leaf ->      *
+  leaf ->      *
+  leaf ->      *
+  leaf ->      *
+sigmoid ->      +
+sigmoid ->      +
+     + ->      +
+     + ->      +
+  leaf ->      *
+  leaf ->      *
+     * ->      +
+```
+
