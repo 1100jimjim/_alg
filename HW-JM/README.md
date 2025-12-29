@@ -81,3 +81,14 @@ epoch=200 loss=0.013905  a=2.5032 b=-1.0100
 
 True params: 2.5 -1.0
 Learned params: 2.5031983333845145 -1.0100261165178162
+```
+
+### Demo 2：梯度檢查
+
+```text
+x.data = 1.234500
+f(x)   = 1.921514
+autodiff grad df/dx = 0.1485876193
+numerical grad      = 0.1485876193
+abs diff            = 6.5606492461e-11
+```
