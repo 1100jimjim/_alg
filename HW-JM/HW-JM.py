@@ -1,5 +1,3 @@
-```.py
-
 import math
 import random
 from typing import Callable, Set, Tuple, List
@@ -286,5 +284,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-```
