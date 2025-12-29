@@ -50,3 +50,8 @@
 
 ## [HW11](https://chatgpt.com/share/6925d0db-23bc-8007-946d-6d5e82836041)
 說明:使用ChatGPT講計算理論的故事
+
+---
+
+## [HW12](https://github.com/1100jimjim/_alg/tree/main/HW12)
+說明:參考老師提供的範例與答案，並在ChatGPT的教學下實作梯度下降法、爬山演算法跟隨機搜尋法驗證cross_entropy(p, q)的最低點是 q=p
