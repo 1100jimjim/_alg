@@ -1,3 +1,5 @@
+## [AI Chat](https://chatgpt.com/share/69251eec-14a0-8007-8f38-b063d98dc9df)
+
 字串編輯距離
 ---
 ```
