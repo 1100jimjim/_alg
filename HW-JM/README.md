@@ -1,5 +1,4 @@
-# 期末專題 README  
-## 反向傳遞演算法（Backpropagation）之梯度引擎實作
+# 反向傳遞演算法（Backpropagation）之梯度引擎實作
 
 ---
 
