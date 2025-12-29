@@ -35,3 +35,8 @@
 
 ## [HW8](https://github.com/1100jimjim/_alg/blob/main/HW8/AI%E5%B0%8D%E8%A9%B1%E7%B4%80%E9%8C%84.md)
 說明:使用ChatGPT分析與了解C(n,k)的查表版和動態規劃版之異同
+
+---
+
+## [HW9](https://github.com/1100jimjim/_alg/tree/main/HW9)
+說明:根據老師的要求使用ChatGPT寫一個最小編輯距離程式，並請他進行說明
