@@ -4,3 +4,4 @@
 ---
 
 ## [HW2](https://github.com/1100jimjim/_alg/blob/main/HW2/power2n.py)
+說明:使用老師上課給的程式，修改與延伸
