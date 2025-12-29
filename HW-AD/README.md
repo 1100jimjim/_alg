@@ -20,3 +20,8 @@
 
 ## [HW5](https://gemini.google.com/share/5334435610e8)
 說明:使用Gemini完成
+
+---
+
+## [HW6](https://github.com/1100jimjim/_alg/tree/main/HW6)
+說明:參考老師提供的筆記與教材，並在ChatGPT的協助下完成
