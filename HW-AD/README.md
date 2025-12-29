@@ -28,5 +28,5 @@
 
 ---
 
-## [HW7](使用 ChatGPT 協助分析搜尋邏輯)
+## [HW7](https://github.com/1100jimjim/_alg/tree/main/HW7)
 說明:使用 ChatGPT 協助分析老師提供的JavaScript程式碼搜尋邏輯，並在ChatGPT的教學下使用Python重新實作了BFS版本與DFS版本
