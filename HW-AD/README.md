@@ -25,3 +25,8 @@
 
 ## [HW6](https://github.com/1100jimjim/_alg/tree/main/HW6)
 說明:參考老師提供的筆記與教材，並在ChatGPT的協助下完成
+
+---
+
+## [HW7](使用 ChatGPT 協助分析搜尋邏輯)
+說明:使用 ChatGPT 協助分析老師提供的JavaScript程式碼搜尋邏輯，並在ChatGPT的教學下使用Python重新實作了BFS版本與DFS版本
