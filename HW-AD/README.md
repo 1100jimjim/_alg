@@ -30,3 +30,8 @@
 
 ## [HW7](https://github.com/1100jimjim/_alg/tree/main/HW7)
 說明:使用 ChatGPT 協助分析老師提供的JavaScript程式碼搜尋邏輯，並在ChatGPT的教學下使用Python重新實作了BFS版本與DFS版本
+
+---
+
+## [HW8](https://github.com/1100jimjim/_alg/blob/main/HW8/AI%E5%B0%8D%E8%A9%B1%E7%B4%80%E9%8C%84.md)
+說明:使用ChatGPT分析與了解C(n,k)的查表版和動態規劃版之異同
