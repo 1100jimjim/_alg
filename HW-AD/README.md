@@ -59,4 +59,4 @@
 ---
 
 ## [期中作業](https://github.com/1100jimjim/_alg/tree/main/HW-JM)
-說明:在ChatGPT教學與協助下完成專案反傳遞演算法（梯度引擎）
+說明:在ChatGPT的教學與協助下完成專案反傳遞演算法（梯度引擎）
