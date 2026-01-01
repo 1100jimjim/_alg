@@ -1,3 +1,4 @@
+111210523 資工三 蘇湧竣
 ## [HW1](https://github.com/1100jimjim/_alg/blob/main/HW1/images.jpg) : 計算合併排序的複雜度 T(n) = T(n/2) + n 
 說明:參考老師上課影片後自行計算
 
